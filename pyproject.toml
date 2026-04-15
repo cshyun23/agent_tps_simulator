@@ -1,0 +1,16 @@
+[project]
+name = "agent-tps-simulator"
+version = "0.1.0"
+description = "LLM 기반 에이전트 파이프라인 TPS 시뮬레이터"
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.0.0",
+    "numpy>=1.26.0",
+    "python-multipart>=0.0.9",
+]
+
+[dependency-groups]
+dev = []

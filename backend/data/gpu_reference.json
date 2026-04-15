@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-04-15T00:00:00Z",
+  "gpus": [
+    {
+      "id": "h100-80g",
+      "name": "H100-80G",
+      "vendor": "NVIDIA",
+      "tflops_fp16": 989.0,
+      "memory_bandwidth_gbps": 3350.0,
+      "vram_gb": 80.0,
+      "notes": "SXM5"
+    },
+    {
+      "id": "a100-80g",
+      "name": "A100-80G",
+      "vendor": "NVIDIA",
+      "tflops_fp16": 312.0,
+      "memory_bandwidth_gbps": 2000.0,
+      "vram_gb": 80.0,
+      "notes": "SXM4"
+    },
+    {
+      "id": "a100-40g",
+      "name": "A100-40G",
+      "vendor": "NVIDIA",
+      "tflops_fp16": 312.0,
+      "memory_bandwidth_gbps": 1555.0,
+      "vram_gb": 40.0,
+      "notes": "SXM4"
+    },
+    {
+      "id": "a6000",
+      "name": "RTX A6000",
+      "vendor": "NVIDIA",
+      "tflops_fp16": 38.7,
+      "memory_bandwidth_gbps": 768.0,
+      "vram_gb": 48.0,
+      "notes": null
+    },
+    {
+      "id": "rtx-4090",
+      "name": "RTX 4090",
+      "vendor": "NVIDIA",
+      "tflops_fp16": 82.6,
+      "memory_bandwidth_gbps": 1008.0,
+      "vram_gb": 24.0,
+      "notes": null
+    },
+    {
+      "id": "rtx-3090",
+      "name": "RTX 3090",
+      "vendor": "NVIDIA",
+      "tflops_fp16": 35.6,
+      "memory_bandwidth_gbps": 936.0,
+      "vram_gb": 24.0,
+      "notes": null
+    }
+  ]
+}
