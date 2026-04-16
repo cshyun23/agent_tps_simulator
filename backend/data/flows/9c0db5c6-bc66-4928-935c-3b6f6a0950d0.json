@@ -1,0 +1,32 @@
+{
+  "flow_id": "9c0db5c6-bc66-4928-935c-3b6f6a0950d0",
+  "name": "Test Flow",
+  "created_at": "2026-04-16T00:13:28.112809+00:00",
+  "updated_at": "2026-04-16T00:13:28.112809+00:00",
+  "nodes": [
+    {
+      "id": "1",
+      "type": "start",
+      "label": "시작",
+      "position": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "config": {
+        "llm_server_id": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "fallback_latency_ms": null,
+        "concurrency": null,
+        "tool_latency_ms": null,
+        "failure_rate": null,
+        "max_retries": null,
+        "retry_delay_ms": null,
+        "branches": null,
+        "fanout_nodes": null,
+        "fanin_node": null
+      }
+    }
+  ],
+  "edges": []
+}

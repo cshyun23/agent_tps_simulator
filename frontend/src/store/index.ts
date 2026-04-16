@@ -1,10 +1,34 @@
 import { create } from 'zustand'
 import { api } from '../api/client'
 import type {
-  FlowSummary, Flow,
+  FlowSummary,
   LLMServer, GPUReference,
   FlowMetricSnapshot, SimulationSummary, SimulationHistoryItem,
 } from '../types'
+
+// ── Toast Store ───────────────────────────────────────────
+
+interface Toast {
+  id: string
+  message: string
+  type: 'success' | 'error' | 'info' | 'warning'
+  duration?: number
+}
+
+interface ToastState {
+  toasts: Toast[]
+  addToast: (message: string, type: Toast['type'], duration?: number) => void
+  removeToast: (id: string) => void
+}
+
+export const useToastStore = create<ToastState>((set) => ({
+  toasts: [],
+  addToast: (message, type, duration = 3000) => {
+    const id = Date.now().toString()
+    set(s => ({ toasts: [...s.toasts, { id, message, type, duration }] }))
+  },
+  removeToast: (id) => set(s => ({ toasts: s.toasts.filter(t => t.id !== id) })),
+}))
 
 // ── Flow Store ────────────────────────────────────────────
 

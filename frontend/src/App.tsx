@@ -1,9 +1,25 @@
-import { useState } from 'react'
-import AgentPage from './pages/AgentPage'
-import LLMHubPage from './pages/LLMHubPage'
-import ComparePage from './pages/ComparePage'
+import { useState, lazy, Suspense } from 'react'
+import { Toast } from './components/Toast'
+
+const AgentPage = lazy(() => import('./pages/AgentPage'))
+const LLMHubPage = lazy(() => import('./pages/LLMHubPage'))
+const ComparePage = lazy(() => import('./pages/ComparePage'))
 
 type Tab = 'agent' | 'llm-hub' | 'compare'
+
+function LoadingSpinner() {
+  return (
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100%',
+      color: 'var(--text2)',
+    }}>
+      <div>⏳ 로딩 중...</div>
+    </div>
+  )
+}
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('agent')
@@ -40,10 +56,13 @@ export default function App() {
         ))}
       </nav>
       <div style={{ flex: 1, overflow: 'hidden' }}>
-        {tab === 'agent' && <AgentPage />}
-        {tab === 'llm-hub' && <LLMHubPage />}
-        {tab === 'compare' && <ComparePage />}
+        <Suspense fallback={<LoadingSpinner />}>
+          {tab === 'agent' && <AgentPage />}
+          {tab === 'llm-hub' && <LLMHubPage />}
+          {tab === 'compare' && <ComparePage />}
+        </Suspense>
       </div>
+      <Toast />
     </div>
   )
 }

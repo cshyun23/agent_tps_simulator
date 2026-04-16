@@ -15,6 +15,13 @@ async function req<T>(path: string, options?: RequestInit): Promise<T> {
   return res.json()
 }
 
+async function reqFormData<T>(path: string, options?: RequestInit): Promise<T> {
+  const res = await fetch(`${BASE}${path}`, options)
+  if (!res.ok) throw new Error(`API error ${res.status}: ${await res.text()}`)
+  if (res.status === 204) return undefined as T
+  return res.json()
+}
+
 // ── Flow ──────────────────────────────────────────────────
 
 export const api = {
@@ -38,6 +45,8 @@ export const api = {
       req<LLMServer>(`/llm-hub/servers/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
     deleteServer: (id: string) => req<void>(`/llm-hub/servers/${id}`, { method: 'DELETE' }),
     getGPUReference: () => req<GPUReference>('/llm-hub/gpu-reference'),
+    uploadGPUReference: (formData: FormData) =>
+      reqFormData<GPUReference>('/llm-hub/gpu-reference/upload', { method: 'POST', body: formData }),
   },
 
   simulation: {
