@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.api import flow, llm_hub, simulation
+from api import flow, llm_hub, simulation
 
 app = FastAPI(title="Agent TPS Simulator", version="0.1.0")
 

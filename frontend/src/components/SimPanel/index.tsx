@@ -15,6 +15,7 @@ export function SimPanel({ flow, startNode, endNodes }: SimPanelProps) {
   const setStatus = useSimStore(s => s.setStatus)
   const snapshots = useSimStore(s => s.snapshots)
   const addSnapshot = useSimStore(s => s.addSnapshot)
+  const clearSnapshots = useSimStore(s => s.clearSnapshots)
   const summary = useSimStore(s => s.summary)
   const setFinished = useSimStore(s => s.setFinished)
   const reset = useSimStore(s => s.reset)
@@ -53,8 +54,8 @@ export function SimPanel({ flow, startNode, endNodes }: SimPanelProps) {
     }
 
     try {
+      clearSnapshots()
       setStatus('running')
-      addSnapshot({} as any) // clear
       addToast('시뮬레이션 시작됨', 'info')
 
       const ws = createSimulationWS(

@@ -115,6 +115,7 @@ interface SimState {
   ws: WebSocket | null
   setStatus: (s: SimStatus) => void
   addSnapshot: (snap: FlowMetricSnapshot) => void
+  clearSnapshots: () => void
   setFinished: (summary: SimulationSummary) => void
   reset: () => void
   setWS: (ws: WebSocket | null) => void
@@ -131,6 +132,7 @@ export const useSimStore = create<SimState>((set, get) => ({
 
   setStatus: (status) => set({ status }),
   addSnapshot: (snap) => set(s => ({ snapshots: [...s.snapshots, snap] })),
+  clearSnapshots: () => set({ snapshots: [] }),
   setFinished: (summary) => {
     set({ status: 'finished', summary })
     get().fetchHistory()

@@ -2,15 +2,15 @@
   "flow_id": "2632b5b1-a573-464a-a5f1-68e5e1a205a4",
   "name": "RAG Test Flow",
   "created_at": "2026-04-16T00:14:18.608858+00:00",
-  "updated_at": "2026-04-16T00:14:18.608858+00:00",
+  "updated_at": "2026-04-16T01:13:39.587955+00:00",
   "nodes": [
     {
       "id": "1",
       "type": "start",
       "label": "시작",
       "position": {
-        "x": 100.0,
-        "y": 100.0
+        "x": 100,
+        "y": 100
       },
       "config": {
         "llm_server_id": null,
@@ -32,8 +32,8 @@
       "type": "llm",
       "label": "쿼리 분석",
       "position": {
-        "x": 250.0,
-        "y": 100.0
+        "x": 250,
+        "y": 100
       },
       "config": {
         "llm_server_id": "75958215-a3bd-4038-8630-05beb9083d71",
@@ -55,8 +55,8 @@
       "type": "tool",
       "label": "검색",
       "position": {
-        "x": 400.0,
-        "y": 100.0
+        "x": 400,
+        "y": 100
       },
       "config": {
         "llm_server_id": null,
@@ -78,8 +78,8 @@
       "type": "llm",
       "label": "답변 생성",
       "position": {
-        "x": 550.0,
-        "y": 100.0
+        "x": 550,
+        "y": 100
       },
       "config": {
         "llm_server_id": "75958215-a3bd-4038-8630-05beb9083d71",
@@ -101,8 +101,8 @@
       "type": "end",
       "label": "종료",
       "position": {
-        "x": 700.0,
-        "y": 100.0
+        "x": 700,
+        "y": 100
       },
       "config": {
         "llm_server_id": null,
@@ -125,33 +125,25 @@
       "id": "e1",
       "source": "1",
       "target": "2",
-      "branch": null,
-      "is_loop": false,
-      "max_loop_count": null
+      "is_loop": false
     },
     {
       "id": "e2",
       "source": "2",
       "target": "3",
-      "branch": null,
-      "is_loop": false,
-      "max_loop_count": null
+      "is_loop": false
     },
     {
       "id": "e3",
       "source": "3",
       "target": "4",
-      "branch": null,
-      "is_loop": false,
-      "max_loop_count": null
+      "is_loop": false
     },
     {
       "id": "e4",
       "source": "4",
       "target": "5",
-      "branch": null,
-      "is_loop": false,
-      "max_loop_count": null
+      "is_loop": false
     }
   ]
 }

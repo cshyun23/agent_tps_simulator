@@ -7,8 +7,8 @@ from typing import Optional
 
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
-from backend.models.simulation import SimulationConfig, SimulationResult
-from backend.engine.simulator import DESSimulator
+from models.simulation import SimulationConfig, SimulationResult
+from engine.simulator import DESSimulator
 
 router = APIRouter()
 DATA_DIR = Path(__file__).parent.parent / "data" / "simulation_results"
@@ -80,14 +80,14 @@ async def simulation_ws(websocket: WebSocket):
             await websocket.close()
             return
 
-        from backend.models.flow import Flow
+        from models.flow import Flow
         flow = Flow.model_validate_json(flow_path.read_text())
 
         # LLM 서버 목록 로드
         servers_dir = Path(__file__).parent.parent / "data" / "llm_servers"
         servers = {}
         for f in servers_dir.glob("*.json"):
-            from backend.models.llm_server import LLMServer
+            from models.llm_server import LLMServer
             s = LLMServer.model_validate_json(f.read_text())
             servers[s.server_id] = s
 

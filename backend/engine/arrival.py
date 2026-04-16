@@ -1,6 +1,6 @@
 """요청 도착 패턴 생성 (Ramp-up / Wave)"""
 import math
-from backend.models.simulation import RampUpPattern, WavePattern, ArrivalPattern
+from models.simulation import RampUpPattern, WavePattern, ArrivalPattern
 
 
 def users_at(pattern: ArrivalPattern, t: float) -> float:

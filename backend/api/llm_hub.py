@@ -6,7 +6,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException, UploadFile, File
 from fastapi.responses import FileResponse
 
-from backend.models.llm_server import LLMServer, GPUReference
+from models.llm_server import LLMServer, GPUReference
 
 router = APIRouter()
 DATA_DIR = Path(__file__).parent.parent / "data" / "llm_servers"

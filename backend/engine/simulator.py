@@ -7,18 +7,18 @@ import uuid
 from dataclasses import dataclass, field
 from typing import AsyncIterator, Optional
 
-from backend.models.flow import Flow, Node
-from backend.models.llm_server import LLMServer
-from backend.models.simulation import (
+from models.flow import Flow, Node
+from models.llm_server import LLMServer
+from models.simulation import (
     SimulationConfig,
     FlowMetricSnapshot,
     NodeMetricSnapshot,
     SimulationSummary,
     NodeSummary,
 )
-from backend.engine.arrival import arrival_rate_at
-from backend.engine.metrics import NodeMetrics, FlowMetrics
-from backend.engine.node import (
+from engine.arrival import arrival_rate_at
+from engine.metrics import NodeMetrics, FlowMetrics
+from engine.node import (
     LLMServerState,
     compute_llm_latency,
     compute_tool_latency,

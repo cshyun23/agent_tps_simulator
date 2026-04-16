@@ -6,7 +6,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse
 
-from backend.models.flow import Flow
+from models.flow import Flow
 
 router = APIRouter()
 DATA_DIR = Path(__file__).parent.parent / "data" / "flows"
