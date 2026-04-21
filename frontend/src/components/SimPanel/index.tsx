@@ -92,6 +92,16 @@ export function SimPanel({ flow, startNode, endNodes }: SimPanelProps) {
     setStatus(simStatus === 'paused' ? 'running' : 'paused')
   }
 
+  const handlePlayPause = () => {
+    if (simStatus === 'running') {
+      pauseSim()
+    } else if (simStatus === 'paused') {
+      setStatus('running')
+    } else {
+      startSim()
+    }
+  }
+
   const downloadFile = useCallback((content: string, filename: string, type: string) => {
     const blob = new Blob([content], { type })
     const url = URL.createObjectURL(blob)
@@ -156,7 +166,7 @@ export function SimPanel({ flow, startNode, endNodes }: SimPanelProps) {
         <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
           <button
             className={`btn-sm ${simStatus === 'running' ? 'btn-danger' : 'btn-success'}`}
-            onClick={simStatus === 'running' ? pauseSim : startSim}
+            onClick={handlePlayPause}
             disabled={simStatus === 'finished' || !startNode}
           >
             {simStatus === 'idle' ? '▶ 시작' : simStatus === 'running' ? '⏸ 일시정지' : '▶ 재개'}

@@ -1,0 +1,160 @@
+{
+  "result_id": "17123be8-b8b1-46dc-87e2-27645fdf1eec",
+  "flow_id": "2632b5b1-a573-464a-a5f1-68e5e1a205a4",
+  "flow_name": "RAG Test Flow",
+  "config": {
+    "flow_id": "2632b5b1-a573-464a-a5f1-68e5e1a205a4",
+    "start_node_id": "1",
+    "end_node_ids": [
+      "5"
+    ],
+    "duration_sec": 60,
+    "playback_speed": 1,
+    "max_hops_per_request": 10,
+    "arrival_pattern": {
+      "type": "ramp_up",
+      "start_users": 0,
+      "peak_users": 100,
+      "ramp_duration_sec": 10,
+      "hold_duration_sec": 30,
+      "ramp_shape": "linear"
+    },
+    "show_p95": true,
+    "show_p99": false
+  },
+  "started_at": "2026-04-21T15:53:49.468159+00:00",
+  "finished_at": "2026-04-21T15:54:49.390516+00:00",
+  "snapshots": [
+    {
+      "sim_time_sec": 16.4829524012258,
+      "wall_time_sec": 0.00014270900283008814,
+      "total_completed": 0,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 0.0,
+      "e2e_p95_latency_ms": null,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 0.0,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "2",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "3",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "4",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "5",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_requests": 0,
+    "total_completed": 0,
+    "total_failed": 0,
+    "failure_rate": 0.0,
+    "e2e_avg_latency_ms": 0.0,
+    "e2e_p95_latency_ms": null,
+    "e2e_p99_latency_ms": null,
+    "peak_tps": 0.0,
+    "bottleneck_node_id": "1",
+    "nodes": [
+      {
+        "node_id": "1",
+        "node_label": "시작",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": null,
+        "p99_latency_ms": null,
+        "total_processed": 0,
+        "total_retries": 0
+      },
+      {
+        "node_id": "2",
+        "node_label": "쿼리 분석",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": null,
+        "p99_latency_ms": null,
+        "total_processed": 0,
+        "total_retries": 0
+      },
+      {
+        "node_id": "3",
+        "node_label": "검색",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": null,
+        "p99_latency_ms": null,
+        "total_processed": 0,
+        "total_retries": 0
+      },
+      {
+        "node_id": "4",
+        "node_label": "답변 생성",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": null,
+        "p99_latency_ms": null,
+        "total_processed": 0,
+        "total_retries": 0
+      },
+      {
+        "node_id": "5",
+        "node_label": "종료",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": null,
+        "p99_latency_ms": null,
+        "total_processed": 0,
+        "total_retries": 0
+      }
+    ]
+  }
+}

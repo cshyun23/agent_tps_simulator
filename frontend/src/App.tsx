@@ -1,5 +1,6 @@
 import { useState, lazy, Suspense } from 'react'
 import { Toast } from './components/Toast'
+import { GuideModal } from './components/GuideModal'
 
 const AgentPage = lazy(() => import('./pages/AgentPage'))
 const LLMHubPage = lazy(() => import('./pages/LLMHubPage'))
@@ -23,6 +24,7 @@ function LoadingSpinner() {
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('agent')
+  const [guideOpen, setGuideOpen] = useState(false)
 
   const tabs: { key: Tab; label: string }[] = [
     { key: 'agent', label: 'Agent Flow' },
@@ -54,6 +56,27 @@ export default function App() {
             {t.label}
           </button>
         ))}
+        <div style={{ flex: 1 }} />
+        <button
+          onClick={() => setGuideOpen(true)}
+          style={{
+            background: 'transparent',
+            color: 'var(--text2)',
+            border: '1px solid var(--border)',
+            padding: '4px 10px',
+            borderRadius: 'var(--radius)',
+            cursor: 'pointer',
+            fontSize: 16,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            minWidth: 32,
+            height: 32,
+          }}
+          title="가이드"
+        >
+          ?
+        </button>
       </nav>
       <div style={{ flex: 1, overflow: 'hidden' }}>
         <Suspense fallback={<LoadingSpinner />}>
@@ -63,6 +86,7 @@ export default function App() {
         </Suspense>
       </div>
       <Toast />
+      {guideOpen && <GuideModal onClose={() => setGuideOpen(false)} />}
     </div>
   )
 }
