@@ -1,27 +1,27 @@
 {
-  "server_id": "e5d89ca2-d9df-4ae0-897c-5770e7b8495a",
-  "name": "Test LLM Server",
+  "server_id": "178c7fb3-df15-45cf-8024-487a5ec71a77",
+  "name": "test2",
   "server_type": "vllm",
   "model_name": "Llama-3",
   "model_params_b": 70.0,
   "model_weights_gb": 140.0,
   "gpu_id": "h100-80g",
-  "gpu_count": 4,
+  "gpu_count": 2,
   "vram_gb": 80.0,
   "kv_cache": {
     "gpu_memory_utilization": 0.9,
     "kv_block_size_tokens": 16,
-    "kv_size_per_token_bytes": 1024.0,
+    "kv_size_per_token_bytes": 1024,
     "total_kv_blocks": 3200,
     "max_concurrent_requests": 128
   },
   "perf_reference": {
-    "ref_ttft_ms": 85.0,
+    "ref_ttft_ms": 85,
     "ref_input_tokens": 512,
-    "ref_tpop_ms": 18.0,
+    "ref_tpop_ms": 30,
     "ref_output_tokens": 128
   },
   "max_context_length": 8192,
   "tensor_parallel": 4,
-  "created_at": "2026-04-16T00:14:07.582685+00:00"
+  "created_at": "2026-04-21T14:40:29.562306+00:00"
 }

@@ -11,14 +11,14 @@
   "kv_cache": {
     "gpu_memory_utilization": 0.9,
     "kv_block_size_tokens": 16,
-    "kv_size_per_token_bytes": 1024.0,
+    "kv_size_per_token_bytes": 1024,
     "total_kv_blocks": 3200,
     "max_concurrent_requests": 128
   },
   "perf_reference": {
-    "ref_ttft_ms": 85.0,
+    "ref_ttft_ms": 85,
     "ref_input_tokens": 512,
-    "ref_tpop_ms": 18.0,
+    "ref_tpop_ms": 18,
     "ref_output_tokens": 128
   },
   "max_context_length": 8192,
