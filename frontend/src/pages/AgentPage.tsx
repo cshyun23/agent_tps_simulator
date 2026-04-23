@@ -4,6 +4,7 @@ import { api } from '../api/client'
 import { useFlowStore, useToastStore } from '../store'
 import { FlowEditor } from '../components/FlowEditor'
 import { SimPanel } from '../components/SimPanel'
+import { NodeMonitor } from '../components/NodeMonitor'
 import type { Flow } from '../types'
 
 export default function AgentPage() {
@@ -207,10 +208,10 @@ export default function AgentPage() {
         </div>
       </div>
 
-      {/* Editor + SimPanel */}
+      {/* Editor + SimPanel + NodeMonitor */}
       {currentFlowId && flow ? (
         <>
-          <div style={{ flex: 1.5, display: 'flex', overflow: 'hidden' }}>
+          <div style={{ flex: 2, display: 'flex', overflow: 'hidden' }}>
             <ReactFlowProvider>
               <FlowEditor
                 flowId={currentFlowId}
@@ -221,8 +222,11 @@ export default function AgentPage() {
               />
             </ReactFlowProvider>
           </div>
-          <div style={{ flex: 1, display: 'flex', overflow: 'hidden', borderLeft: '1px solid var(--border)' }}>
+          <div style={{ flex: 0.75, display: 'flex', overflow: 'hidden', borderLeft: '1px solid var(--border)' }}>
             <SimPanel flow={flow} startNode={startNode} endNodes={endNodes} />
+          </div>
+          <div style={{ flex: 0.75, minWidth: 260, display: 'flex', overflow: 'hidden' }}>
+            <NodeMonitor flowNodes={flow.nodes} />
           </div>
         </>
       ) : (

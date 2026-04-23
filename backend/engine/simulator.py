@@ -51,6 +51,7 @@ class Request:
     loop_counts: dict = field(default_factory=dict)  # edge_id → count
     parallel_pending: dict = field(default_factory=dict)  # fanin_node_id → {branch_node_ids}
     llm_server_req_ids: dict = field(default_factory=dict)  # server_id → req_id (KV 추적용)
+    node_enqueue_times: dict = field(default_factory=dict)  # node_id → enqueue time (큐 대기 계산용)
     failed: bool = False
 
 
@@ -215,6 +216,7 @@ class DESSimulator:
 
         nm = self._node_metrics[node_id]
         nm.queue_depth += 1
+        req.node_enqueue_times[node_id] = now_ms
 
         # End 노드: 즉시 완료
         if node.type == "end":
@@ -224,7 +226,8 @@ class DESSimulator:
 
         # 처리 시간 계산 후 dequeue 이벤트 스케줄
         latency_ms = self._calc_latency(node, req, now_ms)
-        nm.record_wait(0.0)  # 큐 대기는 추후 정교화
+        wait_ms = now_ms - req.node_enqueue_times.get(node_id, now_ms)
+        nm.record_wait(max(0.0, wait_ms))
         self._push(now_ms + latency_ms, "complete", req_id, node_id)
         nm.queue_depth -= 1
         nm.active_requests += 1

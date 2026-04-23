@@ -1,0 +1,3706 @@
+{
+  "result_id": "0423d018-1b0f-40d9-9c73-5a3eb6912b07",
+  "flow_id": "9c0db5c6-bc66-4928-935c-3b6f6a0950d0",
+  "flow_name": "Test Flow",
+  "config": {
+    "flow_id": "9c0db5c6-bc66-4928-935c-3b6f6a0950d0",
+    "start_node_id": "1",
+    "end_node_ids": [
+      "node_1776852697442"
+    ],
+    "duration_sec": 60,
+    "playback_speed": 1,
+    "max_hops_per_request": 10,
+    "arrival_pattern": {
+      "type": "ramp_up",
+      "start_users": 0,
+      "peak_users": 100,
+      "ramp_duration_sec": 10,
+      "hold_duration_sec": 30,
+      "ramp_shape": "linear"
+    },
+    "show_p95": true,
+    "show_p99": false
+  },
+  "started_at": "2026-04-22T10:12:09.229359+00:00",
+  "finished_at": "2026-04-22T10:12:50.269665+00:00",
+  "snapshots": [
+    {
+      "sim_time_sec": 1.2208021766113342,
+      "wall_time_sec": 0.00007166701834648848,
+      "total_completed": 0,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 0.0,
+      "e2e_p95_latency_ms": null,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 0.0,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 1.728579358589676,
+      "wall_time_sec": 1.2224832919891924,
+      "total_completed": 0,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 0.0,
+      "e2e_p95_latency_ms": null,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 0.0,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 1220.802176611334,
+          "tps": 1.9693677374471952,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 2.2534025375398663,
+      "wall_time_sec": 2.229361000005156,
+      "total_completed": 1,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0000000000002,
+      "e2e_p95_latency_ms": null,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 1.905403648520843,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 1898.1101681465643,
+          "tps": 20.959440133729274,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 11,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 2220.8021766113343,
+          "tps": 1.905403648520843,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 2.779550484093098,
+      "wall_time_sec": 2.7475604580249637,
+      "total_completed": 3,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0000000000001,
+      "e2e_p95_latency_ms": null,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 3.8012122124620995,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 2222.1037662649405,
+          "tps": 24.707879381003647,
+          "p95_latency_ms": 2682.916276284698,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 21,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 2614.752858913918,
+          "tps": 5.7018183186931495,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 3.281697480589183,
+      "wall_time_sec": 3.275358667015098,
+      "total_completed": 14,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": null,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 21.90593606405404,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 2572.164939163246,
+          "tps": 33.854628462628966,
+          "p95_latency_ms": 3243.845197044565,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 27,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 2972.2613212091387,
+          "tps": 21.90593606405404,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 3.8031498743784176,
+      "wall_time_sec": 3.7762337920139544,
+      "total_completed": 25,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000002,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 21.094926652970877,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 2900.3096352220114,
+          "tps": 40.272132701126225,
+          "p95_latency_ms": 3711.324651412892,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 38,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 3222.1037662649405,
+          "tps": 19.177206048155345,
+          "p95_latency_ms": 3682.916276284698,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 4.303165019345182,
+      "wall_time_sec": 4.276200750027783,
+      "total_completed": 42,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000002,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 33.99897017345338,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 3109.596303605385,
+          "tps": 27.99915190754984,
+          "p95_latency_ms": 4221.600793986012,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 35,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 3572.1649391632463,
+          "tps": 33.99897017345338,
+          "p95_latency_ms": 4243.845197044565,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 4.807284542008414,
+      "wall_time_sec": 4.803917000012007,
+      "total_completed": 64,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000005,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 43.64044440051713,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 3416.2265776065524,
+          "tps": 41.65678783685726,
+          "p95_latency_ms": 4652.556286758094,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 34,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 3914.4165139588304,
+          "tps": 43.64044440051713,
+          "p95_latency_ms": 4749.849114237407,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 5.320279578104212,
+      "wall_time_sec": 5.305163917015307,
+      "total_completed": 78,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000005,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 27.290712414195024,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 3805.237200656763,
+          "tps": 60.42943463143184,
+          "p95_latency_ms": 5217.206595554552,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 50,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 4140.029873102075,
+          "tps": 29.240049015208953,
+          "p95_latency_ms": 5232.42218214448,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 5.822631901566862,
+      "wall_time_sec": 5.8087962080026045,
+      "total_completed": 99,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000005,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 41.8033300916171,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 4206.076296178398,
+          "tps": 73.65348635189679,
+          "p95_latency_ms": 5717.240844276945,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 66,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 4444.201210490173,
+          "tps": 41.8033300916171,
+          "p95_latency_ms": 5754.414870488797,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 6.325806535710677,
+      "wall_time_sec": 6.3231117079849355,
+      "total_completed": 129,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000003,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 59.6214474345413,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 4545.097015571384,
+          "tps": 71.54573692144956,
+          "p95_latency_ms": 6233.72536019578,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 72,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 4816.933887849485,
+          "tps": 59.6214474345413,
+          "p95_latency_ms": 6220.848760710492,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 6.827276038399287,
+      "wall_time_sec": 6.827016499999445,
+      "total_completed": 166,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000002,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 73.7831509226901,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 4912.03263382556,
+          "tps": 87.74212542157741,
+          "p95_latency_ms": 6724.532388922983,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 79,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 5215.7840790659475,
+          "tps": 73.7831509226901,
+          "p95_latency_ms": 6725.271488826059,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 7.329122503597111,
+      "wall_time_sec": 7.3229630420100875,
+      "total_completed": 202,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000002,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 71.73508731561772,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 5254.539833662862,
+          "tps": 89.66885914452214,
+          "p95_latency_ms": 7199.1872811448975,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 89,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 5545.097015571384,
+          "tps": 69.74244600129501,
+          "p95_latency_ms": 7233.72536019578,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 7.83013600927748,
+      "wall_time_sec": 7.825861666991841,
+      "total_completed": 246,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 87.82198384103162,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 5521.514179509281,
+          "tps": 75.84625877180004,
+          "p95_latency_ms": 7602.053742603834,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 83,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 5912.032633825561,
+          "tps": 87.82198384103162,
+          "p95_latency_ms": 7724.532388922983,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 8.333851355410195,
+      "wall_time_sec": 8.33065879199421,
+      "total_completed": 292,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.32141864083722,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 5797.962088581338,
+          "tps": 79.40992925290193,
+          "p95_latency_ms": 8076.729813335261,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 77,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 6261.644568833871,
+          "tps": 91.32141864083722,
+          "p95_latency_ms": 8202.907926898275,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 8.838010377910694,
+      "wall_time_sec": 8.83214237500215,
+      "total_completed": 330,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000005,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 75.37304363121348,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 6111.289573233576,
+          "tps": 93.22455396492192,
+          "p95_latency_ms": 8568.299224371032,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 85,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 6535.487345757529,
+          "tps": 77.35654477940331,
+          "p95_latency_ms": 8621.566760780068,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 9.338719560481255,
+      "wall_time_sec": 9.335753625025973,
+      "total_completed": 370,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000009,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 79.88669150153464,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 6389.131044114355,
+          "tps": 85.87819336414974,
+          "p95_latency_ms": 9081.670584082785,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 89,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 6804.815843356551,
+          "tps": 77.88952421399628,
+          "p95_latency_ms": 9086.429495669687,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 9.846429800543598,
+      "wall_time_sec": 9.826288375013974,
+      "total_completed": 416,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000006,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 90.60286039208424,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 6741.37915040239,
+          "tps": 112.26876179019135,
+          "p95_latency_ms": 9593.053583079845,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 100,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 7111.289573233576,
+          "tps": 90.60286039208424,
+          "p95_latency_ms": 9568.299224371032,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 10.349217638397386,
+      "wall_time_sec": 10.34569637500681,
+      "total_completed": 463,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000005,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 93.47879256711003,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 7075.18261541612,
+          "tps": 113.3678973686228,
+          "p95_latency_ms": 10085.452098455258,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 110,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 7414.64808703083,
+          "tps": 93.47879256711003,
+          "p95_latency_ms": 10111.238007248632,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 10.849366214345487,
+      "wall_time_sec": 10.849863875017036,
+      "total_completed": 518,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000005,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 109.96732300144964,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 7371.14571580427,
+          "tps": 105.96851125594237,
+          "p95_latency_ms": 10492.299990510073,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 107,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 7759.336760444182,
+          "tps": 111.96672887420327,
+          "p95_latency_ms": 10607.870159420487,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 11.355682760278142,
+      "wall_time_sec": 11.3518495419994,
+      "total_completed": 574,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000002,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 110.60274535734503,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 7735.982682375405,
+          "tps": 134.30333364820467,
+          "p95_latency_ms": 11095.390466300832,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 119,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8086.581807012369,
+          "tps": 110.60274535734503,
+          "p95_latency_ms": 11095.601073189984,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 11.85793143273776,
+      "wall_time_sec": 11.840250250010286,
+      "total_completed": 626,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0000000000002,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 103.53437022609768,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8009.783118928816,
+          "tps": 105.52541580736879,
+          "p95_latency_ms": 11513.453393514152,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 121,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8371.14571580427,
+          "tps": 101.54332464482657,
+          "p95_latency_ms": 11492.299990510073,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 12.361124156256622,
+      "wall_time_sec": 12.358496624976397,
+      "total_completed": 695,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 137.12439940998746,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8292.850929308497,
+          "tps": 111.28936763709129,
+          "p95_latency_ms": 11951.54747586137,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 108,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8741.191115511803,
+          "tps": 137.12439940998746,
+          "p95_latency_ms": 12100.31028804354,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 12.862079599711679,
+      "wall_time_sec": 12.861210292030592,
+      "total_completed": 749,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 107.79401782235499,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8431.807654195462,
+          "tps": 53.897008911177494,
+          "p95_latency_ms": 12181.759772603595,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 80,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 9025.18286275695,
+          "tps": 109.79020333758379,
+          "p95_latency_ms": 12539.604968111782,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 13.365156290866816,
+      "wall_time_sec": 13.362971291993745,
+      "total_completed": 804,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 109.3272675259748,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8744.499175616691,
+          "tps": 117.27834152786389,
+          "p95_latency_ms": 13015.470456628762,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 84,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 9302.963449294219,
+          "tps": 109.3272675259748,
+          "p95_latency_ms": 12960.12712383578,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 13.866764819652122,
+      "wall_time_sec": 13.846579624980222,
+      "total_completed": 830,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 51.83324945243964,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 8988.29603453945,
+          "tps": 93.69856631787165,
+          "p95_latency_ms": 13362.488907909608,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 106,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 9431.80765419546,
+          "tps": 49.83966293503811,
+          "p95_latency_ms": 13181.759772603595,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 14.368443515545195,
+      "wall_time_sec": 14.36178416700568,
+      "total_completed": 889,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 117.60515342388612,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 9288.121642517799,
+          "tps": 117.60515342388612,
+          "p95_latency_ms": 13893.898483638428,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 106,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 9744.499175616693,
+          "tps": 117.60515342388612,
+          "p95_latency_ms": 14015.470456628762,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 14.869805080960584,
+      "wall_time_sec": 14.870367957977578,
+      "total_completed": 938,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 97.73385791829214,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 9582.01784870313,
+          "tps": 115.68497467879479,
+          "p95_latency_ms": 14414.352201755926,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 114,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10003.885560535677,
+          "tps": 99.72842644723688,
+          "p95_latency_ms": 14376.948849780063,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 15.370034484454276,
+      "wall_time_sec": 15.37149029201828,
+      "total_completed": 996,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 115.9468027967118,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 9898.89069964922,
+          "tps": 127.94129963775094,
+          "p95_latency_ms": 14910.177751562065,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 120,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10298.314455672224,
+          "tps": 115.9468027967118,
+          "p95_latency_ms": 14909.687340039796,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 15.877142251793337,
+      "wall_time_sec": 15.868825374986045,
+      "total_completed": 1053,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 112.40214343214511,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10130.897340909585,
+          "tps": 92.68246914580386,
+          "p95_latency_ms": 15282.531493926612,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 111,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10582.017848703128,
+          "tps": 110.430176003511,
+          "p95_latency_ms": 15414.352201755926,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 16.402942392930097,
+      "wall_time_sec": 16.376111041987315,
+      "total_completed": 1117,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 121.71925222696663,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10390.556431123365,
+          "tps": 100.79875575045675,
+          "p95_latency_ms": 15795.411627163821,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 100,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10898.89069964922,
+          "tps": 121.71925222696663,
+          "p95_latency_ms": 15910.177751562065,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 16.918612976298004,
+      "wall_time_sec": 16.90463483298663,
+      "total_completed": 1167,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 96.96112520796486,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10619.58062303334,
+          "tps": 89.20423519132767,
+          "p95_latency_ms": 16122.667867930497,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 96,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11145.69569875591,
+          "tps": 96.96112520796486,
+          "p95_latency_ms": 16304.001270956254,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 17.419910934958086,
+      "wall_time_sec": 17.412863124976866,
+      "total_completed": 1218,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 101.73590200989015,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 10835.110704730174,
+          "tps": 85.77732914559367,
+          "p95_latency_ms": 16694.302767779496,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 87,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11400.434807223153,
+          "tps": 103.73072361792723,
+          "p95_latency_ms": 16809.317388150415,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 17.920965279384255,
+      "wall_time_sec": 17.921616000006907,
+      "total_completed": 1264,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.80640884908702,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11068.647943083159,
+          "tps": 91.80640884908702,
+          "p95_latency_ms": 17164.417249714832,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 87,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11629.541426993508,
+          "tps": 91.80640884908702,
+          "p95_latency_ms": 17142.842009367603,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 18.422192464443757,
+      "wall_time_sec": 18.41730525001185,
+      "total_completed": 1306,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 83.79433768145283,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11355.404865210965,
+          "tps": 113.72088685340027,
+          "p95_latency_ms": 17772.629769734885,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 103,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11835.110704730172,
+          "tps": 81.799234403323,
+          "p95_latency_ms": 17694.302767779496,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 18.923837199357127,
+      "wall_time_sec": 18.90757304202998,
+      "total_completed": 1352,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.69836100830159,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11644.053962887147,
+          "tps": 115.61967257568462,
+          "p95_latency_ms": 18273.94593236494,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 114,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12073.714601809157,
+          "tps": 93.69180363891685,
+          "p95_latency_ms": 18168.502488944083,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 19.43253203222227,
+      "wall_time_sec": 19.425961625005584,
+      "total_completed": 1410,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 114.01727765411802,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 11847.573812366987,
+          "tps": 80.59842041066963,
+          "p95_latency_ms": 18592.382108384692,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 97,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12365.428901189876,
+          "tps": 114.01727765411802,
+          "p95_latency_ms": 18777.033366016396,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 19.935850954793654,
+      "wall_time_sec": 19.9286533750128,
+      "total_completed": 1468,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 115.23508733525459,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12108.29690855959,
+          "tps": 103.31421623160757,
+          "p95_latency_ms": 18998.82774152405,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 92,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12649.01357698994,
+          "tps": 113.24827548464675,
+          "p95_latency_ms": 19278.49936943855,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 20.437475700924608,
+      "wall_time_sec": 20.432394374976866,
+      "total_completed": 1508,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 79.74088261897194,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12388.29478635459,
+          "tps": 111.63723566656071,
+          "p95_latency_ms": 19685.77201541968,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 108,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12847.573812366987,
+          "tps": 79.74088261897194,
+          "p95_latency_ms": 19592.382108384692,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 20.93885040891075,
+      "wall_time_sec": 20.938488667015918,
+      "total_completed": 1561,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 105.70936099446259,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12603.358447431545,
+          "tps": 85.76419854267719,
+          "p95_latency_ms": 20058.80945250077,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 97,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13118.321305196328,
+          "tps": 107.70387723964113,
+          "p95_latency_ms": 20016.696075887943,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 21.440571903505177,
+      "wall_time_sec": 21.441234208003152,
+      "total_completed": 1617,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 111.61570832293744,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 12810.752147855823,
+          "tps": 81.71864359357919,
+          "p95_latency_ms": 20416.569339750247,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 83,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13393.272634786606,
+          "tps": 109.62257067431355,
+          "p95_latency_ms": 20694.263334062765,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 21.946584374793574,
+      "wall_time_sec": 21.932926125009544,
+      "total_completed": 1659,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 83.00190683652664,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13039.125334483093,
+          "tps": 88.93061446770712,
+          "p95_latency_ms": 20921.436887269865,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 85,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13608.384487146823,
+          "tps": 84.97814271358679,
+          "p95_latency_ms": 21060.175161315616,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 22.44780308580688,
+      "wall_time_sec": 22.444502707978245,
+      "total_completed": 1701,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 83.79575438253156,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13289.446311708029,
+          "tps": 97.7617134462868,
+          "p95_latency_ms": 21481.86166640423,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 93,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13815.825528076663,
+          "tps": 81.80061737342366,
+          "p95_latency_ms": 21429.54161880521,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 22.96135193497545,
+      "wall_time_sec": 22.932146708015352,
+      "total_completed": 1745,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 85.678314869628,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13578.882794068495,
+          "tps": 110.99236244474535,
+          "p95_latency_ms": 22111.506495672642,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 106,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14039.125334483093,
+          "tps": 85.678314869628,
+          "p95_latency_ms": 21921.436887269865,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 23.46558611098774,
+      "wall_time_sec": 23.460977167007513,
+      "total_completed": 1796,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 101.14348139455915,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 13812.928278818841,
+          "tps": 91.22745380685727,
+          "p95_latency_ms": 22502.267758864895,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 100,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14304.75106603103,
+          "tps": 103.12668691209953,
+          "p95_latency_ms": 22490.548118053048,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 23.983764344323774,
+      "wall_time_sec": 23.967477749974933,
+      "total_completed": 1852,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 108.07092308658353,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14032.52798724085,
+          "tps": 82.98303022719807,
+          "p95_latency_ms": 22861.22892759156,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 88,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14583.948922114341,
+          "tps": 106.14108517432312,
+          "p95_latency_ms": 23112.41065394907,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 24.486362062095,
+      "wall_time_sec": 24.485782042029314,
+      "total_completed": 1898,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.52449040952081,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14258.243200214734,
+          "tps": 87.54516473954163,
+          "p95_latency_ms": 23337.667495481328,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 85,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14823.11369625552,
+          "tps": 93.51415324451038,
+          "p95_latency_ms": 23514.51963217872,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 24.98742382666329,
+      "wall_time_sec": 24.98672504199203,
+      "total_completed": 1941,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 85.81776347881714,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14501.0805597134,
+          "tps": 93.8008112442885,
+          "p95_latency_ms": 23837.758757813328,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 89,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15042.778312779728,
+          "tps": 85.81776347881714,
+          "p95_latency_ms": 23874.695529165598,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 25.489354382128745,
+      "wall_time_sec": 25.479223874979652,
+      "total_completed": 1984,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 85.66922163191418,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14753.466030003554,
+          "tps": 97.62306651078593,
+          "p95_latency_ms": 24333.522318113726,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 95,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15263.397412397058,
+          "tps": 85.66922163191418,
+          "p95_latency_ms": 24340.198697038824,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 25.9936512386308,
+      "wall_time_sec": 25.99008495802991,
+      "total_completed": 2031,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 93.19907390659827,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 14986.498807395456,
+          "tps": 89.23315586801962,
+          "p95_latency_ms": 24878.09013358488,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 94,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15501.0805597134,
+          "tps": 91.21611488730895,
+          "p95_latency_ms": 24837.758757813328,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 26.495413875936478,
+      "wall_time_sec": 26.505838708020747,
+      "total_completed": 2080,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 97.65573671071986,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15245.146494115543,
+          "tps": 99.64871092930598,
+          "p95_latency_ms": 25319.69380641219,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 95,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15753.466030003554,
+          "tps": 97.65573671071986,
+          "p95_latency_ms": 25333.522318113726,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 26.99965234361675,
+      "wall_time_sec": 26.996821917011403,
+      "total_completed": 2126,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.22667735292272,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15502.95313628409,
+          "tps": 99.15943190535077,
+          "p95_latency_ms": 25888.36317556913,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 98,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15996.851560553636,
+          "tps": 93.20986599102973,
+          "p95_latency_ms": 25891.570182319676,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 27.50413849335644,
+      "wall_time_sec": 27.502755041990895,
+      "total_completed": 2176,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 99.11074868120619,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 15786.380546336759,
+          "tps": 109.02182354932681,
+          "p95_latency_ms": 26420.83853464229,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 104,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 16250.316653757924,
+          "tps": 97.12853370758206,
+          "p95_latency_ms": 26324.613870383844,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 28.006727514906377,
+      "wall_time_sec": 28.007839582976885,
+      "total_completed": 2226,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 99.48486309112951,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 16077.787939799524,
+          "tps": 113.41274392388763,
+          "p95_latency_ms": 26960.048770334975,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 111,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 16508.11981693602,
+          "tps": 99.48486309112951,
+          "p95_latency_ms": 26892.55335750211,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 28.51207428099227,
+      "wall_time_sec": 28.507327208004426,
+      "total_completed": 2281,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 108.8361570530987,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 16362.447593859286,
+          "tps": 110.81499627224595,
+          "p95_latency_ms": 27423.242274994376,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 111,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 16796.6537504041,
+          "tps": 110.81499627224595,
+          "p95_latency_ms": 27427.763568664566,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 29.013012165280372,
+      "wall_time_sec": 29.013411708001513,
+      "total_completed": 2338,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 113.78656274121587,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 16636.989898166943,
+          "tps": 107.79779628115189,
+          "p95_latency_ms": 27860.207907376942,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 108,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17087.99066053513,
+          "tps": 113.78656274121587,
+          "p95_latency_ms": 27972.306418754226,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 29.517817629577312,
+      "wall_time_sec": 29.49959766701795,
+      "total_completed": 2393,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 108.95286182490197,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 16949.69979034242,
+          "tps": 122.81958969352587,
+          "p95_latency_ms": 28405.88463098079,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 116,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17362.447593859284,
+          "tps": 106.97190070081285,
+          "p95_latency_ms": 28423.242274994376,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 30.025975047404934,
+      "wall_time_sec": 30.020591416978277,
+      "total_completed": 2448,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 108.23417718691525,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17146.317456304743,
+          "tps": 76.74787109617627,
+          "p95_latency_ms": 28849.773951874195,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 100,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17642.04706919418,
+          "tps": 108.23417718691525,
+          "p95_latency_ms": 28867.52610314061,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 30.527465989332974,
+      "wall_time_sec": 30.52107524999883,
+      "total_completed": 2510,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 123.63134568619262,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17363.885430581624,
+          "tps": 85.74432039526262,
+          "p95_latency_ms": 29164.206736512613,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 81,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17954.707008605063,
+          "tps": 123.63134568619262,
+          "p95_latency_ms": 29406.543243248852,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 31.02759023535351,
+      "wall_time_sec": 31.0303554579732,
+      "total_completed": 2549,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 77.98062243596685,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17582.592013313788,
+          "tps": 85.97863499350191,
+          "p95_latency_ms": 29446.567365063645,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 84,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18156.419781940098,
+          "tps": 79.98012557535061,
+          "p95_latency_ms": 29858.541010352365,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 31.52902083094455,
+      "wall_time_sec": 31.531111625023186,
+      "total_completed": 2592,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 85.75463958140747,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 17807.510212396945,
+          "tps": 87.74893352516115,
+          "p95_latency_ms": 29973.998941950274,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 85,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18374.039196859725,
+          "tps": 85.75463958140747,
+          "p95_latency_ms": 30190.776141937462,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 32.03037692436138,
+      "wall_time_sec": 32.02914633299224,
+      "total_completed": 2635,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 85.7673828335213,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18058.421577300214,
+          "tps": 97.73492462424521,
+          "p95_latency_ms": 30505.513510672252,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 92,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18587.694656302814,
+          "tps": 83.77279253506731,
+          "p95_latency_ms": 30449.392044831493,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 32.54891611959494,
+      "wall_time_sec": 32.53322795801796,
+      "total_completed": 2679,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 84.85375918435885,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18304.38480587956,
+          "tps": 92.56773729202784,
+          "p95_latency_ms": 31039.821949207635,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 95,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18817.75779093588,
+          "tps": 86.7822537112761,
+          "p95_latency_ms": 30993.483465481644,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 33.05095683542899,
+      "wall_time_sec": 33.046269458020106,
+      "total_completed": 2729,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 99.59351587039,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18566.348651348944,
+          "tps": 101.5853861877978,
+          "p95_latency_ms": 31582.422172224517,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 97,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19068.665523577787,
+          "tps": 97.60164555298219,
+          "p95_latency_ms": 31528.398894299917,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 33.554118871277474,
+      "wall_time_sec": 33.53905479202513,
+      "total_completed": 2775,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.42184171830405,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 18822.390827963045,
+          "tps": 99.37156708511309,
+          "p95_latency_ms": 32070.89404642517,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 101,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19304.38480587956,
+          "tps": 91.42184171830405,
+          "p95_latency_ms": 32039.821949207635,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 34.05643789138774,
+      "wall_time_sec": 34.05514279199997,
+      "total_completed": 2827,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 103.51987067618032,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19083.36783878844,
+          "tps": 101.52910393240762,
+          "p95_latency_ms": 32644.61830580664,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 99,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19576.59430107459,
+          "tps": 105.51063741995303,
+          "p95_latency_ms": 32612.226365996372,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 34.558454537256644,
+      "wall_time_sec": 34.55830145801883,
+      "total_completed": 2877,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 99.59829103566575,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19324.05651579637,
+          "tps": 93.62239357352581,
+          "p95_latency_ms": 33017.092352057974,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 97,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19827.51134518352,
+          "tps": 97.60632521495243,
+          "p95_latency_ms": 33092.048740114195,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 35.07146907276273,
+      "wall_time_sec": 35.061492791981436,
+      "total_completed": 2928,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 99.41238789596581,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19549.810554609976,
+          "tps": 85.76755034161756,
+          "p95_latency_ms": 33438.29222056193,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 90,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20088.482230007172,
+          "tps": 99.41238789596581,
+          "p95_latency_ms": 33666.50844034672,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 35.57481763084458,
+      "wall_time_sec": 35.57249120797496,
+      "total_completed": 2975,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 93.37465906152003,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 19791.147532373336,
+          "tps": 93.37465906152003,
+          "p95_latency_ms": 33893.73505225997,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 89,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20334.300184861062,
+          "tps": 95.3613539351694,
+          "p95_latency_ms": 34052.327099418675,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 36.076819127808676,
+      "wall_time_sec": 36.076670332986396,
+      "total_completed": 3021,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.6331928852591,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20022.580729556877,
+          "tps": 89.64116695297088,
+          "p95_latency_ms": 34360.485430711415,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 88,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20570.35831798392,
+          "tps": 91.6331928852591,
+          "p95_latency_ms": 34466.04183807512,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 36.57983353098585,
+      "wall_time_sec": 36.5786788330297,
+      "total_completed": 3066,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 89.46065901049268,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20316.197054223754,
+          "tps": 113.31683474662405,
+          "p95_latency_ms": 34958.528573012416,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 100,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20801.441777324904,
+          "tps": 89.46065901049268,
+          "p95_latency_ms": 34910.474060951354,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 37.08474663345982,
+      "wall_time_sec": 37.08302220801124,
+      "total_completed": 3111,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 89.12424688428439,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20552.620058007735,
+          "tps": 91.10478570393515,
+          "p95_latency_ms": 35362.89961357695,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 101,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21032.901610516165,
+          "tps": 89.12424688428439,
+          "p95_latency_ms": 35367.34754160976,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 37.586751457499375,
+      "wall_time_sec": 37.587580875027925,
+      "total_completed": 3167,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 111.55271287908478,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 20830.178452375043,
+          "tps": 107.56868741911747,
+          "p95_latency_ms": 35944.506901819965,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 100,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21316.197054223754,
+          "tps": 109.56070014910112,
+          "p95_latency_ms": 35958.528573012416,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 38.087573422355824,
+      "wall_time_sec": 38.08356395800365,
+      "total_completed": 3213,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 91.84900668880427,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21106.485158558942,
+          "tps": 107.82274698250936,
+          "p95_latency_ms": 36474.92354877582,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 107,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21557.764723024648,
+          "tps": 93.8457242255174,
+          "p95_latency_ms": 36368.003398138186,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 38.59260272878057,
+      "wall_time_sec": 38.590990750002675,
+      "total_completed": 3268,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 108.90457108194687,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21347.12999129899,
+          "tps": 93.06390619730004,
+          "p95_latency_ms": 36887.33835028554,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 100,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21835.305922694846,
+          "tps": 106.92448797136602,
+          "p95_latency_ms": 36959.649241337225,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 39.09462312698344,
+      "wall_time_sec": 39.07683849998284,
+      "total_completed": 3321,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 105.5733993872131,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21577.232391996073,
+          "tps": 89.63779193253943,
+          "p95_latency_ms": 37340.102532246885,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 92,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 22106.485158558942,
+          "tps": 105.5733993872131,
+          "p95_latency_ms": 37474.92354877582,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 39.5965789685668,
+      "wall_time_sec": 39.59717920800904,
+      "total_completed": 3369,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 95.62594161388724,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 1,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 21903.875863171485,
+          "tps": 127.501255485183,
+          "p95_latency_ms": 37897.06759701235,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 108,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 22352.248861212163,
+          "tps": 95.62594161388724,
+          "p95_latency_ms": 37892.65861060994,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 40.105855319887326,
+      "wall_time_sec": 40.098495958023705,
+      "total_completed": 3414,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 88.36067075040474,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 22117.730641509268,
+          "tps": 82.46995936704441,
+          "p95_latency_ms": 38354.89243072976,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 104,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 22587.49476788564,
+          "tps": 90.32424121152484,
+          "p95_latency_ms": 38350.228643567236,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    },
+    {
+      "sim_time_sec": 40.647522269234656,
+      "wall_time_sec": 40.606160625000484,
+      "total_completed": 3480,
+      "total_failed": 0,
+      "e2e_avg_latency_ms": 1000.0,
+      "e2e_p95_latency_ms": 1000.0,
+      "e2e_p99_latency_ms": null,
+      "overall_tps": 121.84609025809156,
+      "bottleneck_node_id": "1",
+      "nodes": [
+        {
+          "node_id": "1",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 22117.730641509268,
+          "tps": 0.0,
+          "p95_latency_ms": 38354.89243072976,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852681233",
+          "queue_depth": 0,
+          "active_requests": 38,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 22924.223881377166,
+          "tps": 121.84609025809156,
+          "p95_latency_ms": 38932.78616837013,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        },
+        {
+          "node_id": "node_1776852697442",
+          "queue_depth": 0,
+          "active_requests": 0,
+          "avg_wait_ms": 0.0,
+          "avg_process_ms": 0.0,
+          "tps": 0.0,
+          "p95_latency_ms": null,
+          "p99_latency_ms": null,
+          "retry_count": 0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_requests": 3519,
+    "total_completed": 3519,
+    "total_failed": 0,
+    "failure_rate": 0.0,
+    "e2e_avg_latency_ms": 1000.0,
+    "e2e_p95_latency_ms": 1000.0,
+    "e2e_p99_latency_ms": 1000.0000000000018,
+    "peak_tps": 137.12439940998746,
+    "bottleneck_node_id": "1",
+    "nodes": [
+      {
+        "node_id": "1",
+        "node_label": "시작",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": 38354.89243072976,
+        "p99_latency_ms": 39667.94266906001,
+        "total_processed": 3519,
+        "total_retries": 0
+      },
+      {
+        "node_id": "node_1776852681233",
+        "node_label": "llm",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": 39354.89243072976,
+        "p99_latency_ms": 40667.94266906001,
+        "total_processed": 3519,
+        "total_retries": 0
+      },
+      {
+        "node_id": "node_1776852697442",
+        "node_label": "end",
+        "peak_queue_depth": 0,
+        "avg_wait_ms": 0.0,
+        "p95_latency_ms": null,
+        "p99_latency_ms": null,
+        "total_processed": 0,
+        "total_retries": 0
+      }
+    ]
+  }
+}

@@ -89,6 +89,11 @@ export function SimPanel({ flow, startNode, endNodes }: SimPanelProps) {
   }
 
   const pauseSim = () => {
+    const ws = useSimStore.getState().ws
+    if (ws) {
+      ws.close()
+      useSimStore.setState({ ws: null })
+    }
     setStatus(simStatus === 'paused' ? 'running' : 'paused')
   }
 
@@ -355,7 +360,7 @@ export function SimPanel({ flow, startNode, endNodes }: SimPanelProps) {
           </div>
         ) : (
           <>
-            <ResponsiveContainer width="100%" height={200}>
+            <ResponsiveContainer width="100%" height={350}>
               <LineChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                 <XAxis dataKey="time" stroke="var(--text2)" />
